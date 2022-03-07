@@ -1,0 +1,51 @@
+@import url("styles.css");
+
+main h2 {
+    color: var(--color2);
+    padding-bottom: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+textarea {
+    height: 100px;
+}
+.container {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.order-md-1 {
+    text-align: center;
+}
+
+.img-fluid {
+    margin-top: 30px;
+}
+
+#logo-menu {
+    width: 55px;
+}
+
+.back-button {
+    margin-top: 30px;
+}
+
+.btn {
+    background-color: var(--color4);
+    color: white;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    right: 0;
+}
+
+.btn:hover {
+    font-size: 1.2em;
+    color: white;
+}
+@media (max-width: 800px) {
+    footer a {
+        font-size: 1.3em;
+    }
+}

@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
+
+:root {
+    --font-text: "Montserrat", sans-serif;
+    --font-title: "Pontano Sans", sans-serif;
+
+    --color0: #d6ebff;
+    --color1: #7c98b3;
+    --color2: #637081;
+    --color3: #659b5e;
+    --color4: #091558;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+/******** NAV ********/
+
+nav {
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    height: 80px;
+    background-color: var(--color1);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    font-family: var(--font-title);
+    margin: 10px;
+}
+
+nav a:hover {
+    color: var(--color4);
+
+    transition: 0.3s;
+}
+
+#logo-menu {
+    width: 30px;
+    padding-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+/*SUB-MENU*/
+
+nav ul ul {
+    /*esconde a sub-lista*/
+    position: absolute;
+    visibility: hidden;
+    padding-bottom: 10px;
+}
+
+nav ul ul li {
+    /*faz com que os sub-itens do ul fiquem na vertical.*/
+    display: block;
+}
+
+.sub-menu {
+    visibility: visible;
+    height: auto;
+    background-color: var(--color1);
+}
+
+/*ICON MENU RESPONSIVO*/
+
+.threeline {
+    display: none;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+/************ MAIN ****************/
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.main-img {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-img img {
+    max-width: 100%;
+}
+
+.img-float {
+    float: right;
+    padding-left: 15px;
+}
+
+article {
+    margin: 15px;
+    font-family: var(--font-text);
+    font-size: 1.3em;
+    line-height: 2em;
+    text-align: justify;
+}
+
+article h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: var(--font-title);
+    color: var(--color4);
+    font-size: 2.2em;
+}
+
+article h2 {
+    text-align: center;
+    padding: 20px;
+    font-family: var(--font-title);
+    color: var(--color4);
+    font-size: 1.8em;
+}
+
+article h3 {
+    color: var(--color4);
+    padding: 20px;
+    font-style: italic;
+}
+
+article span {
+    font-weight: bold;
+    color: var(--color2);
+}
+
+.main-none {
+    display: none;
+}
+
+/*BOTÃO VOLTAR*/
+
+.back-button {
+    text-align: center;
+}
+
+.back-button a {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: var(--color2);
+}
+
+.back-button a:hover {
+    color: var(--color4);
+    font-size: 1.5em;
+}
+
+/*BOTÃO VOLTAR AO TOPO*/
+
+.top-button {
+    padding: 8px;
+    font-size: 1.5em;
+    background-color: var(--color2);
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    border-radius: 5px;
+    opacity: 0.8;
+    transition: 0.4s all;
+}
+
+.show-button {
+    transition: 0.4s all;
+}
+/*********** FOOTER **************/
+
+footer {
+    margin-top: 30px;
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+
+footer hr {
+    opacity: 0.3;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.192);
+}
+
+footer ul li {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color2);
+    font-size: 1.5em;
+}
+
+footer a:hover {
+    font-size: 1.6em;
+    color: var(--color4);
+}
+
+.footer-none {
+    display: none;
+}
+
+@media (max-width: 770px) {
+    /******* NAV ******/
+    nav ul li {
+        display: none;
+    }
+    .threeline {
+        display: inline-block;
+        float: left;
+    }
+
+    #logo-menu {
+        display: inline-block;
+        text-align: center;
+        width: 40px;
+    }
+
+    .menu-mobile {
+        height: 500px;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+
+        animation-name: menu-animation;
+        animation-duration: 0.8s;
+    }
+
+    .menu-mobile .threeline {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .menu-mobile ul li {
+        display: block;
+        padding: 20px;
+    }
+
+    /*SUB-MENU*/
+
+    .sub-menu {
+        position: relative;
+        text-align: center;
+        float: none;
+    }
+
+    .sub-menu a {
+        font-size: 1.1em;
+    }
+
+    @keyframes menu-animation {
+        0% {
+            /*condição ao 0% (quando abre a página)*/
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+        100% {
+            /*condição aos 100% (quando a página carrega*/
+            opacity: 1;
+            transform: translate(0, 0px);
+        }
+    }
+}

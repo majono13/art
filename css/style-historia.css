@@ -1,0 +1,19 @@
+@import url("styles.css");
+
+.sub-head {
+    text-align: center;
+    font-style: italic;
+    line-height: 1.4em;
+    font-size: 0.9em;
+    color: gray;
+}
+
+main ul {
+    padding-left: 50px;
+}
+
+@media (max-width: 800px) {
+    .img-float {
+        float: none;
+    }
+}

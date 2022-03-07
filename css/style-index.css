@@ -1,0 +1,117 @@
+@import url("styles.css");
+
+/************ BACKGROUND DAS DIVS ******/
+.container {
+    margin: auto;
+}
+
+.seurat {
+    background-image: url("../img/seurat.jpg");
+}
+
+.bosch {
+    background-image: url("../img/bosch.jpg");
+}
+
+.caravaggio {
+    background-image: url("../img/caravaggio.jpg");
+}
+
+.tarsilia {
+    background-image: url("../img/tarsilia.jpg");
+}
+
+.rembrandt {
+    background-image: url("../img/rembrandt.jpg");
+}
+
+.johannes {
+    background-image: url("../img/johannes.JPG");
+}
+
+.michelangelo {
+    background-image: url("../img/michelangelo.jpg");
+}
+
+.salvador {
+    background-image: url("../img/salvador.jpg");
+}
+
+.venus {
+    background-image: url("../img/venus.jpg");
+}
+
+.eugene {
+    background-image: url("../img/eugene.jpg");
+}
+
+.diego {
+    background-image: url("../img/diego.jpg");
+}
+
+.picasso {
+    background-image: url("../img/picasso.jpg");
+}
+
+.botticelli {
+    background-image: url("../img/botticelli.jpg");
+}
+
+.van-gogh {
+    background-image: url("../img/van-gogh.jpg");
+}
+
+.munch {
+    background-image: url("../img/munch.jpg");
+}
+
+.da-vinci {
+    background-image: url("../img/da-vinci.jpg");
+}
+/******** CONFIGURAÇÕES DAS DIVS*/
+
+.center-image {
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    position: relative;
+}
+
+.container h3 {
+    color: var(--color2);
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 10px;
+}
+
+.button-info {
+    width: 100px;
+    height: 40px;
+    font-size: 0.8em;
+    background-color: var(--color2);
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.button-info:hover {
+    opacity: 0.9;
+    color: var(--cor4);
+}
+
+.details {
+    width: 98%;
+    /* height: 97.6%; */
+    line-height: 1.2em;
+    bottom: 0;
+    padding: 5px;
+    text-align: justify;
+}
+
+.details p {
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
