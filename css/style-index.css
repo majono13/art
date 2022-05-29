@@ -83,25 +83,6 @@
     line-height: 1.5em;
     margin-top: 10px;
 }
-
-.button-info {
-    width: 100px;
-    height: 40px;
-    font-size: 0.8em;
-    background-color: var(--color2);
-    color: white;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.button-info:hover {
-    opacity: 0.9;
-    color: var(--cor4);
-}
-
 .details {
     width: 98%;
     /* height: 97.6%; */

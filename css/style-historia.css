@@ -11,9 +11,3 @@
 main ul {
     padding-left: 50px;
 }
-
-@media (max-width: 800px) {
-    .img-float {
-        float: none;
-    }
-}

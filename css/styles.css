@@ -290,4 +290,10 @@ footer a:hover {
             transform: translate(0, 0px);
         }
     }
+
+    /*********/
+
+    .img-float {
+        float: none;
+    }
 }

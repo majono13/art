@@ -48,4 +48,8 @@ textarea {
     footer a {
         font-size: 1.3em;
     }
+
+    footer a:hover {
+        font-size: 1.3em;
+    }
 }
